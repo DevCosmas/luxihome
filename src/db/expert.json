@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/asset/img/w-5.jpg",
+    "name": "Dr. Jane Smith",
+    "role": "C.E.O"
+  },
+  {
+    "id": 2,
+    "image": "/asset/img/men.jpg",
+    "name": "Mr. John Doe",
+    "role": "Chief Engineer"
+  },
+  {
+    "id": 3,
+    "image": "/asset/img/w-3.jpg",
+    "name": "Ms. Emily Johnson",
+    "role": "Marketing"
+  },
+  {
+    "id": 4,
+    "image": "/asset/img/m-3.jpg",
+    "name": "Mr. Emiz Johnson",
+    "role": "Human Resource"
+  }
+]

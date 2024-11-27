@@ -1,0 +1,20 @@
+[
+  {
+    "img": "/asset/img/w-0.jpg",
+    "name": "Amanda C.",
+    "role": "Designer",
+    "feedback": "This service is amazing! I have been using it for months, and I am very satisfied."
+  },
+  {
+    "img": "/asset/img/m-0.jpg",
+    "name": "John D.",
+    "role": "Developer",
+    "feedback": "A fantastic platform with incredible support. I recommend it to everyone!"
+  },
+  {
+    "img": "/asset/img/w-3.jpg",
+    "name": "Sophia L.",
+    "role": "Manager",
+    "feedback": "My experience has been nothing short of excellent. Great features and usability."
+  }
+]

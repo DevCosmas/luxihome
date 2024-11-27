@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Modern Family Home",
+    "location": "Lagos, Nigeria",
+    "bedrooms": 4,
+    "bathtubs": 3,
+    "price": 25000000,
+    "category": "sale",
+    "bgImage": "/asset/img/luxi-modern-6.jpg",
+    "images": [
+      "/asset/img/luxi-modern-4.jpg",
+      "/asset/img/luxi-modern-5.jpg",
+      "/asset/img/luxi-modern-6.jpg"
+    ],
+    "latitude": 6.5244,
+    "longitude": 3.3792
+  },
+  {
+    "title": "Cozy Studio Apartment",
+    "location": "Abuja, Nigeria",
+    "bedrooms": 1,
+    "bathtubs": 1,
+    "price": 8000000,
+    "category": "rent",
+    "bgImage": "/asset/img/luxi-std-0.jpg",
+    "images": [
+      "/asset/img/luxi-std-2.jpg",
+      "/asset/img/luxi-std-1.jpg",
+      "/asset/img/luxi-std-0.jpg"
+    ],
+    "latitude": 9.0765,
+    "longitude": 7.3986
+  },
+  {
+    "title": "Luxury Penthouse",
+    "location": "Victoria Island, Lagos",
+    "bedrooms": 5,
+    "bathtubs": 4,
+    "price": 75000000,
+    "category": "sale",
+    "bgImage": "/asset/img/luxi-pent-2.jpg",
+    "images": [
+      "/asset/img/luxi-pent-0.jpg",
+      "/asset/img/luxi-pent-1.jpg",
+      "/asset/img/luxi-pent-2.jpg"
+    ],
+    "latitude": 6.4281,
+    "longitude": 3.4216
+  },
+  {
+    "title": "Beachfront Bungalow",
+    "location": "Lekki, Lagos",
+    "bedrooms": 3,
+    "bathtubs": 2,
+    "price": 32000000,
+    "category": "rent",
+    "bgImage": "/asset/img/luxi-bug-1.jpg",
+    "images": [
+      "/asset/img/luxi-bug-0.jpg",
+      "/asset/img/luxi-bug-2.jpg",
+      "/asset/img/luxi-bug-1.jpg"
+    ],
+    "latitude": 6.4654,
+    "longitude": 3.5665
+  },
+  {
+    "title": "Suburban Duplex",
+    "location": "Ibadan, Nigeria",
+    "bedrooms": 4,
+    "bathtubs": 3,
+    "price": 15000000,
+    "category": "sale",
+    "bgImage": "/asset/img/luxi-sub-1.jpg",
+    "images": [
+      "/asset/img/luxi-sub-0.jpg",
+      "/asset/img/luxi-sub-2.jpg",
+      "/asset/img/luxi-sub-1.jpg"
+    ],
+    "latitude": 7.3775,
+    "longitude": 3.947
+  },
+  {
+    "title": "Elegant Townhouse",
+    "location": "Port Harcourt, Nigeria",
+    "bedrooms": 3,
+    "bathtubs": 2,
+    "price": 20000000,
+    "category": "rent",
+    "bgImage": "/asset/img/luxi-tw-2.jpg",
+    "images": [
+      "/asset/img/luxi-tw-0.jpg",
+      "/asset/img/luxi-tw-1.jpg",
+      "/asset/img/luxi-tw-2.jpg"
+    ],
+    "latitude": 4.8156,
+    "longitude": 7.0498
+  }
+]

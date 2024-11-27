@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/asset/img/city-1.jpg",
+    "location": "lagos",
+    "prop": 5
+  },
+  {
+    "id": 2,
+    "image": "/asset/img/luxi-city-0.jpg",
+    "location": "abuja",
+    "prop": 5
+  },
+  {
+    "id": 3,
+    "image": "/asset/img/city-3.jpg",
+    "location": "Enugu",
+    "prop": 7
+  },
+  {
+    "id": 4,
+    "image": "/asset/img/city-5.jpg",
+    "location": "Port-Harcourt",
+    "prop": 10
+  },
+  {
+    "id": 5,
+    "image": "/asset/img/city-4.jpg",
+    "location": "Port-Harcourt",
+    "prop": 8
+  }
+]
