@@ -11,7 +11,7 @@ export default function BrandSupport() {
         Thousands of Leading company trust us
       </h1>
 
-      <span className="flex items-center justify-between">
+      <span className="flex items-center flex-wrap justify-between">
         <FaAmazon size={30} />
         <span className="flex items-center gap-1 font-bold capitalize">
           <SiNubank size={30} />

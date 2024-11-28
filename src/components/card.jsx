@@ -20,7 +20,7 @@ export function ReviewCardRight() {
   const { img, name, role, feedback } = reviews[currentIndex];
 
   return (
-    <div className="w-full sm:w-1/2  p-6 rounded-lg">
+    <div className="w-full md:w-1/2  p-6 rounded-lg">
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-4">
           <img
@@ -54,7 +54,7 @@ export function ReviewCardRight() {
 
 export function ReviewCardLeft() {
   return (
-    <div className="w-full sm:w-1/2 flex flex-col justify-between p-6 bg-white rounded-lg shadow-md">
+    <div className="w-full md:w-1/2 flex flex-col justify-between p-6 bg-white rounded-lg shadow-md">
       <div className="flex flex-col gap-4">
         <h2 className="font-bold text-2xl capitalize">
           What are our customers saying about us

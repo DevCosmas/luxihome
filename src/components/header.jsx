@@ -1,48 +1,3 @@
-// import { Link } from 'react-router-dom';
-// import { IoMdArrowDropdown } from 'react-icons/io';
-// import { FaDirections } from 'react-icons/fa';
-// import Logo from './logo';
-
-// export default function Header() {
-//   return (
-//     <header className="w-full flex flex-col relative justify-center px-6 py-4">
-//       <nav className="bg-white rounded-full py-2 sticky flex items-center justify-between px-4 gap-4 w-full">
-//         <Logo />
-
-//         <ul className="flex items-center gap-4  justify-center">
-//           <li>
-//             <Link>Home</Link>
-//           </li>
-//           <li>
-//             <Link className="flex items-center justify-center gap-2">
-//               <p>Listings</p>
-//               <IoMdArrowDropdown className="rotate-180" />
-//             </Link>
-//           </li>
-//           <li>
-//             <Link>About</Link>
-//           </li>
-//           <li>
-//             <Link className="flex items-center justify-center gap-2">
-//               <p>Locations</p>
-//               <IoMdArrowDropdown className="rotate-180" />
-//             </Link>
-//           </li>
-//           <li>
-//             <Link>Contact Us</Link>
-//           </li>
-//         </ul>
-
-//         {/* map */}
-//         <div className="flex cursor-pointer items-center font-bold gap-2 justify-center">
-//           <span>Direction</span>
-//           <FaDirections />
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// }
-
 import { Link } from 'react-router-dom';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FaDirections } from 'react-icons/fa';
@@ -50,8 +5,11 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Logo from './logo';
+import DirectionsToOfficeModal from './officeDirection';
 
 export default function Header() {
+  const officeCoordinates = [12.9716, 77.5946];
+  const [showDirections, setShowDirections] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -75,28 +33,30 @@ export default function Header() {
           />
           <NavItem
             label="Listings"
-            link="/listings"
+            link="#"
             hasDropdown={true}
             dropdownItems={['Residential', 'Commercial', 'Land']}
           />
           <NavItem
             label="About"
-            link="/about"
+            link="#"
           />
           <NavItem
             label="Locations"
-            link="/locations"
+            link="#"
             hasDropdown={true}
             dropdownItems={['City A', 'City B', 'City C']}
           />
           <NavItem
             label="Contact Us"
-            link="/contact"
+            link="#"
           />
         </ul>
 
         {/* Map/Direction Button */}
-        <div className="hidden sm:flex cursor-pointer items-center font-bold text-sm sm:text-base gap-2 hover:text-green-600 transition duration-300">
+        <div
+          onClick={() => setShowDirections(true)}
+          className="hidden sm:flex cursor-pointer items-center font-bold text-sm sm:text-base gap-2 hover:text-green-600 transition duration-300">
           <span>Direction</span>
           <FaDirections />
         </div>
@@ -118,28 +78,35 @@ export default function Header() {
               />
               <NavItem
                 label="Listings"
-                link="/listings"
+                link="#"
                 hasDropdown={true}
                 dropdownItems={['Residential', 'Commercial', 'Land']}
               />
               <NavItem
                 label="About"
-                link="/about"
+                link="#"
               />
               <NavItem
                 label="Locations"
-                link="/locations"
+                link="#"
                 hasDropdown={true}
                 dropdownItems={['City A', 'City B', 'City C']}
               />
               <NavItem
                 label="Contact Us"
-                link="/contact"
+                link="#"
               />
             </ul>
           </motion.div>
         )}
       </AnimatePresence>
+
+      {showDirections && (
+        <DirectionsToOfficeModal
+          officeLocation={officeCoordinates}
+          onClose={() => setShowDirections(false)}
+        />
+      )}
     </header>
   );
 }

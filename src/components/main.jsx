@@ -22,7 +22,7 @@ export default function Main() {
 
         {/*  content flex */}
         <div
-          className="flex flex-col md:flex-row w-full my-11 mx-auto sm:w-4/5
+          className="flex flex-col gap-6 md:flex-row w-full my-11 mx-auto sm:w-4/5
          justify-between items-center ">
           <ContentCard
             icon={<PiCity size={50} />}
@@ -75,14 +75,12 @@ export default function Main() {
 
 function ContentCard({ icon, h2_text, p_text }) {
   return (
-    <div className="flex px-2 text-center flex-row md:flex-col gap-4 md:gap-2 items-center justify-center">
-      <span className="flex flex-col gap-1 justify-center items-center">
+    <div className="flex px-4 text-center flex-col items-start gap-2 md:gap-2 md:items-center md:justify-center">
+      <span className="flex flex-row sm:flex-col gap-1 sm:justify-center items-center">
         {icon}
-        <h2 className="font-bold md:block hidden text-base capitalize">
-          {h2_text}
-        </h2>
+        <h2 className="font-bold text-base capitalize">{h2_text}</h2>
       </span>
-      <p>{p_text}</p>
+      <p className="w-4/5 sm:text-center text-left">{p_text}</p>
     </div>
   );
 }

@@ -8,9 +8,12 @@ import { PiBathtub } from 'react-icons/pi';
 import { TbBed } from 'react-icons/tb';
 import { IoEyeOutline } from 'react-icons/io5';
 import { FaLongArrowAltRight } from 'react-icons/fa';
-// import data from '../db/data.json';
+import data from '../db/data.json';
 
-export default function AllProperties({ propData }) {
+const salesPropData = data.map((data) => data.category === 'sale');
+console.log(salesPropData);
+
+export default function SaleProperties() {
   const [oneView, setOneView] = useState({
     status: false,
     data: null,
@@ -19,7 +22,7 @@ export default function AllProperties({ propData }) {
   return (
     <div className="w-full sm:w-90 relative">
       <div className="my-11 w-full grid-grow grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {propData.map((prop, i) => (
+        {data.map((prop, i) => (
           <Card
             cardData={prop}
             key={i}
