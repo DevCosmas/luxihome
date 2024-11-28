@@ -16,7 +16,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90dvh;
+  min-height: 90vh;
+  max-height: 100vh;
+  /* overflow-y: auto; */
   padding-bottom: 2rem;
 }
 
@@ -30,17 +32,18 @@ html {
 
 @media (max-width: 1024px) {
   .hero {
-    height: 50dvh;
+    min-height: 50%;
   }
 }
 
 @media (max-width: 900px) {
   .hero {
-    height: 70dvh;
+    min-height: 70%;
   }
 }
 @media (max-width: 600px) {
   .hero {
-    height: 80dvh;
+    min-height: 90%;
+    box-sizing: border-box;
   }
 }

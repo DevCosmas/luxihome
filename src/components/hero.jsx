@@ -6,12 +6,11 @@ import { FaMountainCity } from 'react-icons/fa6';
 
 export default function HeroSection() {
   return (
-    <div className="hero w-full h-[80vh] relative">
-      <div className="bg-black bg-opacity-20 top-0 bottom-0 right-0 left-0 absolute flex flex-col gap-11">
-        <Header />
-
-        <div className="my-11 mt-20 flex flex-col text-teal-950 justify-center items-center px-6">
-          <button className="bg-transparent border text-teal-900 font-bold px-2 py-2 border-teal-900 rounded-full mx-auto sm:w-60 w-full">
+    <div className="hero w-full py-11 pb-11 relative">
+      <Header />
+      <div className="bg-black pb-16 bg-opacity-20 top-0 bottom-0 min-h-full right-0 left-0 absolute flex flex-col gap-11">
+        <div className="my-11 mt-24 flex flex-col text-teal-950 justify-center items-center px-6">
+          <button className="bg-transparent mt-8 border text-teal-900 font-bold px-2 py-2 border-teal-900 rounded-full mx-auto sm:w-60 w-full">
             Let Guide You Home
           </button>
           <h1 className="font-bold text-teal-950 mt-6 text-3xl sm:w-1/2 w-full mx-auto text-center">
@@ -36,9 +35,10 @@ export default function HeroSection() {
           <p className="text-slate-50 font-semibold capitalize mt-11">
             what are you looking for ?
           </p>
+
           {/* summary box */}
 
-          <div className="flex items-center gap-8 mt-11 flex-wrap">
+          <div className="sm:flex sm:items-center gap-8 mt-11 sm:flex-wrap grid grid-cols-2 pb-20 mb-11">
             <span className="backdrop-blur-xl px-2 py-2 gap-2 rounded-full flex items-center justify-between">
               <span className="bg-slate-50 font-bold text-slate-950 flex-col flex justify-center items-center px-2 py-2 rounded-full">
                 <IoHome size={20} />

@@ -44,7 +44,6 @@ export default function AllProperties({ propData }) {
 }
 
 export function Card({ onView, cardData }) {
-  console.log(onView);
   return (
     <div
       className="flex rounded-md h-60 flex-col items-start justify-between py-2 px-4 bg-cover bg-center cursor-pointer"
@@ -128,13 +127,14 @@ function OnePropertyView({ data, onClose }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.5 }}
-      className="p-4 fixed top-0 bottom-0 right-0 left-0 backdrop-blur-sm flex flex-col justify-center items-center z-50">
-      <div className="w-full sm:w-4/5 md:w-1/2 bg-slate-100 py-4 px-4 flex flex-col rounded-lg shadow-lg relative">
+      className="p-4 fixed top-0 bottom-0 right-0 left-0 backdrop-blur-sm min-h-100dvh flex flex-col gap-4 justify-center items-center z-50">
+      <div className="w-full sm:w-4/5 max-h-90vh sm:h-auto bg-slate-100 py-4  px-4 flex flex-col rounded-lg shadow-lg relative">
         <button
           onClick={onClose}
           className=" text-red-500 text-right mb-2 text-lg font-bold">
           &times;
         </button>
+
         <div className="flex mb-4 flex-col md:flex-row items-start md:items-center gap-4">
           {/* Image Slider */}
           <div className="rounded-md w-full md:w-1/2 h-64">
@@ -165,6 +165,7 @@ function OnePropertyView({ data, onClose }) {
             <p>{data.location}</p>
           </span>
         </span>
+
         {/* Meta Data */}
         <div className="flex gap-4 my-2 justify-between items-center">
           <p className="text-red-500 font-bold ">

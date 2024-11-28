@@ -8,12 +8,12 @@ import Logo from './logo';
 import DirectionsToOfficeModal from './officeDirection';
 
 export default function Header() {
-  const officeCoordinates = [12.9716, 77.5946];
+  const officeCoordinates = [9.05785, 7.49508];
   const [showDirections, setShowDirections] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full flex flex-col sticky top-0 z-50 bg-white shadow-md">
+    <header className="w-full flex flex-col fixed top-0 z-50 bg-white shadow-md">
       <nav className="flex items-center justify-between px-6 py-4 bg-white rounded-full">
         {/* Logo */}
         <Logo />
@@ -97,6 +97,12 @@ export default function Header() {
                 link="#"
               />
             </ul>
+            <div
+              onClick={() => setShowDirections(true)}
+              className="hidden sm:flex cursor-pointer items-center font-bold text-sm sm:text-base gap-2 hover:text-green-600 transition duration-300">
+              <span>Direction</span>
+              <FaDirections />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

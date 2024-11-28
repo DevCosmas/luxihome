@@ -9,7 +9,7 @@ export default function PopularComponent() {
       </p>
 
       {/* List */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="grid grid-cols-2 sm:flex sm:flex-wrap w-full sm:justify-center gap-4">
         {Array.from({ length: 7 }, (_, index) => (
           <PopularList
             key={index}
